@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.notas_android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Principal"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- created by ADT ext plugin at 2014-10-24 18:40:40 -->
+        <activity android:name=".listado" />
+        <activity
+            android:name=".Listado"
+            android:label="@string/title_activity_listado" />
+        <activity
+            android:name=".Listado2"
+            android:label="@string/title_activity_listado2" />
+        <activity
+            android:name=".Usuarios"
+            android:label="@string/title_activity_usuarios" />
+        <!-- created by ADT ext plugin at 2014-11-11 16:02:38 -->
+        <activity android:name=".Usuarios2" />
+        <activity
+            android:name=".Superusers"
+            android:label="@string/title_activity_superusers" >
+        </activity>
+        <activity
+            android:name=".SuperNotas"
+            android:label="@string/title_activity_super_notas" >
+        </activity>
+        <activity
+            android:name=".NotasAdapter"
+            android:label="@string/title_activity_notas_adapter" >
+        </activity>
+    </application>
+
+</manifest>
